@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/euconsalogo"
+        android:layout_width="wrap_content"
+        android:layout_height="67dp"
+        android:src="@drawable/leucpng"
+        android:layout_below="@+id/euconsalogo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tvconductor"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/etmatricula"
+        android:layout_alignStart="@+id/etmatricula"
+        android:layout_below="@+id/euconsalogo" />
+
+    <EditText
+        android:id="@+id/etmatricula"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:maxLength="8"
+        android:maxLines="1"
+        android:hint="Matrícula"
+        android:layout_below="@+id/tvconductor"
+        android:layout_toRightOf="@+id/dpfecha"
+        android:layout_toEndOf="@+id/dpfecha" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/spubicacion"
+        android:layout_weight="0.15"
+        android:layout_below="@+id/etmatricula"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/etkilometros"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="7"
+        android:maxLines="1"
+        android:hint="Kilometros"
+        android:layout_below="@+id/spubicacion"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/etlitros"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="7"
+        android:maxLines="1"
+        android:hint="Litros"
+        android:layout_below="@+id/etkilometros"
+        android:layout_toRightOf="@+id/dpfecha"
+        android:layout_toEndOf="@+id/dpfecha" />
+
+    <Button
+        android:id="@+id/btfecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha"
+        android:layout_below="@+id/etlitros"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/etfecha" />
+
+    <EditText
+        android:id="@+id/etfecha"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="date"
+        android:hint="Fecha"
+        android:layout_below="@+id/etlitros"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/btfecha"
+        android:layout_toStartOf="@+id/btfecha" />
+
+    <DatePicker
+        android:id="@+id/dpfecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"></DatePicker>
+
+    <ToggleButton style="@style/Toggle"
+        android:text="ToggleButton"
+        android:layout_width="135dp"
+        android:layout_height="112dp"
+        android:id="@+id/tbcompleto"
+        android:textOn="LLENO"
+        android:textOff="NO LLENO"
+        android:layout_below="@+id/etfecha"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="GRABAR REPOSTAJE"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

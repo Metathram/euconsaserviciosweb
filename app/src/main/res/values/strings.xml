@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Acceso Usuarios Euconsa</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="consumos">Consumos</string>
+    <string name="acercade">Acerca de...</string>
+
+    <string-array name="lugarrepostaje">
+        <item>EUCONSA</item>
+        <item>EUCONSA TARRAGONA</item>
+        <item>EUCONSA SELPE</item>
+        <item>SOLRED</item>
+        <item>VALCARCE</item>
+    </string-array>
+
+</resources>
